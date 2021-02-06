@@ -409,18 +409,16 @@ body {
     margin: 0 auto;
   }
 
+  .logos {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
   .logos img {
     width: 15%;
     height: 30px;
-    margin-right: 40px;
-  }
-
-  .logos img:last-child {
-    margin-right: 0;
-  }
-
-  .logos {
-    display: block;
+    margin-top: 30px;
   }
 
   .boxes div {
@@ -499,11 +497,6 @@ body {
   .logos img {
     width: 20%;
     height: 40px;
-    margin-right: 70px;
-  }
-
-  .logos img:last-child {
-    margin-right: 0;
   }
 
   .offer {
@@ -555,7 +548,8 @@ body {
   }
 
   .boxes .boxes-child {
-    margin-left: 108px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     width: 60%;
     height: 400px;
@@ -564,35 +558,29 @@ body {
 @media screen and (max-width: 575px) {
   .container {
     width: 100%;
-    padding: 0 15px;
     margin-right: 0;
   }
 
   .menu {
     display: none;
+    margin: 0;
   }
 
   .get {
     display: none;
-  }
-
-  .menu {
-    display: none;
+    margin: 0;
   }
 
   .logos {
-    display: block;
-    margin-left: 33px;
+    flex-direction: column;
+    width: 100%;
   }
 
   .logos img {
     width: 30%;
     height: 50px;
-    margin-right: 70px;
-  }
-
-  .logos img:last-child {
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .offer {
@@ -605,15 +593,19 @@ body {
 
   .offerph img {
     margin-right: 0;
-    width: 415px;
+    width: 90%;
   }
 
   .offert {
     width: 100%;
   }
   .offert h1 {
-    font-size: 60px;
-    line-height: 65px;
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .offert p {
+    font-size: 16px;
+    line-height: 26px;
   }
 
   .first {
@@ -621,11 +613,11 @@ body {
   }
 
   .first-img {
-    width: 35%;
+    width: 45%;
   }
 
   .first-img img {
-    width: 170px;
+    width: 100%;
   }
 
   .first-text {
@@ -678,18 +670,6 @@ body {
     width: 70%;
   }
 
-  .third {
-    width: 96%;
-  }
-
-  .benchmarks {
-    margin-right: 0;
-  }
-
-  .pricing {
-    margin-right: 0;
-  }
-
   .boxes {
     display: block;
   }
@@ -708,8 +688,9 @@ body {
   }
 
   .plan h1 {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: normal;
   }
 
   .boxes-child a {
@@ -721,5 +702,36 @@ body {
     padding: 25px 40px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .third {
+    display: block;
+    width: 96%;
+    text-align: center;
+  }
+
+  .benchmarks {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .benchmarks img {
+    margin-bottom: -15px;
+  }
+
+  .pricing {
+    width: 100%;
+  }
+
+  .pricing img {
+    margin-bottom: -15px;
+  }
+
+  .retention {
+    width: 100%;
+  }
+
+  .retention img {
+    margin-bottom: -15px;
   }
 }
